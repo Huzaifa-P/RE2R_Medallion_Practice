@@ -1,0 +1,30 @@
+PSEUDOCODE
+----------
+
+HOMEPAGE
+--------
+
+> Click button to take to page
+> Click help for controls
+> Click solutions for puzzle solutions
+
+Puzzle Pages (On opening)
+-------------------------
+> Load images from {puzzle_name.js}
+> Start timer at 0.000
+> Display PB of that puzzle
+
+Puzzle Pages (While open)
+-------------------------
+> R to reset puzzle
+> W and S to change symbol on puzzle
+> A and D to change between sections
+> E, Q, F or Space to confirm puzzle
+    > If puzzle solved correctly:
+        > Stop timer
+        > Set new PB value if PB is beaten
+        > Display "Correct! Press R to restart"
+    > If puzzle solved incorrectly:
+        > Continue timer
+        > Display "Incorrect! Keep trying"
+> "Back" button takes user to Home Page
