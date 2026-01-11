@@ -10,9 +10,9 @@ function puzzleScript() {
     let image2 = document.createElement("img");
     let image3 = document.createElement("img");
 
-    image1.src = "../lion_a_images/" + imageSetA[symbolA];
-    image2.src = "../lion_a_images/" + imageSetB[symbolB];
-    image3.src = "../lion_a_images/" + imageSetC[symbolC];
+    image1.src = "../puzzle_images/" + imageSetA[symbolA];
+    image2.src = "../puzzle_images/" + imageSetB[symbolB];
+    image3.src = "../puzzle_images/" + imageSetC[symbolC];
 
     document.getElementById("symbol_one").appendChild(image1);
     document.getElementById("symbol_two").appendChild(image2);

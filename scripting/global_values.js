@@ -16,9 +16,9 @@ const symbols = {
         3: []
     },
     "maidenA": {
-        1: [],
-        2: [],
-        3: []
+        1: ["harp.png", "fish.png", "lion.png", "pigeon.png", "pot.png", "head.png"],
+        2: ["leaf.png", "snake.png", "bird.png", "bull.png", "fish.png", "bow.png"],
+        3: ["bird.png", "bull.png", "fish.png", "bow.png", "leaf.png", "snake.png"]
     },
     "maidenB": {
         1: [],
@@ -26,9 +26,9 @@ const symbols = {
         3: []
     },
     "unicornA": {
-        1: [],
-        2: [],
-        3: [],
+        1: ["bow.png", "leaf.png", "snake.png", "bird.png", "bull.png", "fish.png"],
+        2: ["scale.png", "shield.png", "dove.png", "harp.png", "crown.png", "scorpion.png"],
+        3: ["head.png", "harp.png", "fish.png", "lion.png", "pigeon.png", "pot.png"],
     },
     "unicornB": {
         1: [], 
