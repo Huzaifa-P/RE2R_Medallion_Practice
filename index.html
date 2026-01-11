@@ -7,11 +7,15 @@
 </head>
 <body>
     <h1 id="main-page-title">RE2R Medallion Practice Tool (WIP)</h1>
-    <button onclick="location.href='./puzzles/lion_a.html'" class="puzzles" id="lion-a">Lion A</button>
-    <button onclick="location.href='./puzzles/lion_b.html'" class="puzzles" id="lion-b">Lion B</button>
-    <button onclick="location.href='./puzzles/unicorn_a.html'" class="puzzles" id="unicorn-a">Unicorn A</button>
-    <button onclick="location.href='./puzzles/unicorn_b.html'" class="puzzles" id="unicorn-b">Unicorn B</button>
-    <button onclick="location.href='./puzzles/maiden_a.html'" class="puzzles" id="maiden-a">Maiden A</button>
-    <button onclick="location.href='./puzzles/maiden_b.html'" class="puzzles" id="maiden-b">Maiden B</button>
+
+    <button onclick="setCurrentPuzzle(this); location.href='./puzzles/puzzle_page.html';" class="puzzles" id="lionA">Lion A</button>
+    <button onclick="setCurrentPuzzle(this); location.href='./puzzles/puzzle_page.html';" class="puzzles" id="lionB">Lion B</button>
+    <button onclick="setCurrentPuzzle(this); location.href='./puzzles/puzzle_page.html';" class="puzzles" id="unicornA">Unicorn A</button>
+    <button onclick="setCurrentPuzzle(this); location.href='./puzzles/puzzle_page.html';" class="puzzles" id="unicornB">Unicorn B</button>
+    <button onclick="setCurrentPuzzle(this); location.href='./puzzles/puzzle_page.html';" class="puzzles" id="maidenA">Maiden A</button>
+    <button onclick="setCurrentPuzzle(this); location.href='./puzzles/puzzle_page.html';" class="puzzles" id="maidenB">Maiden B</button>
+
+    <script src="./scripting/global_values.js"></script>
+    <script src="./scripts.js"></script>
 </body>
 </html>
