@@ -13,10 +13,31 @@ let image3 = document.createElement("img");
 
 let selectedSection = 1; // 1-3
 
-let personalBest = "0s";
+document.getElementById("pb").innerHTML = "PB in session: " + pbValues[currentPuzzle];
 
 let lastWasdTime = 0;
 const WASD_COOLDOWN = 160; // milliseconds
+
+switch (currentPuzzle) {
+    case "lionA":
+        document.getElementById("puzzle-page-title").innerHTML = "Lion Medallion A";
+        break;
+    case "lionB":
+        document.getElementById("puzzle-page-title").innerHTML = "Lion Medallion B";
+        break;
+    case "maidenA":
+        document.getElementById("puzzle-page-title").innerHTML = "Maiden Medallion A";
+        break;
+    case "maidenB":
+        document.getElementById("puzzle-page-title").innerHTML = "Maiden Medallion B";
+        break;
+    case "unicornA":
+        document.getElementById("puzzle-page-title").innerHTML = "Unicorn Medallion A";
+        break;
+    case "unicornB":
+        document.getElementById("puzzle-page-title").innerHTML = "Unicorn Medallion B";
+        break;
+}
 
 function changeSymbol(direction) {
     let currentImage;
@@ -106,6 +127,7 @@ function resetPuzzle() {
 function completePuzzle() {
     if (areArraysEqual([symbolA, symbolB, symbolC], solution)) {
         document.getElementById("solution").innerHTML = "CORRECT! Press R to reset"
+        localStorage.setItem(pbNames[currentPuzzle], document.getElementById("timer").innerHTML);
         document.getElementById("pb").innerHTML = "PB in session: " + checkBestTime(document.getElementById("timer").innerHTML, personalBest)
         document.getElementById("solution").style = "color: green;"
         stopTimer();

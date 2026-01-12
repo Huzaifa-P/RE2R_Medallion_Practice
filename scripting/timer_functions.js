@@ -2,6 +2,8 @@ let startTime = performance.now();
 let intervalId;
 let running = true;
 
+let personalBest = "0s";
+
 function startTimer() {
     startTime = performance.now();
     running = true;
@@ -50,10 +52,15 @@ function checkBestTime(last, pb) {
 
     // Update only when the new time is strictly better (smaller)
     if (isNaN(lastVal) || lastVal >= pbVal) {
-        console.log("No PB update:", last, pb);
         return pb;
     } else {
         personalBest = last;
         return last;
     }
+}
+
+function resetPersonalBest() {
+    personalBest = "0s";
+    localStorage.setItem(pbNames[currentPuzzle], "0s");
+    document.getElementById("pb").innerHTML = "PB in session: " + personalBest;
 }
