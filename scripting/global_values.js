@@ -1,8 +1,13 @@
-
-
 let currentPuzzle = localStorage.getItem('currentPuzzle') || ""; // to be set to "lionA", "lionB", "maidenA", "maidenB", "unicornA", or "unicornB"
 
-const solution = [5, 5, 5]; // target solution for all medallion puzzles
+let pbs = {
+    "lionA": localStorage.getItem('lionAPB') || "0s",
+    "lionB": localStorage.getItem('lionBPB') || "0s",
+    "maidenA": localStorage.getItem('maidenAPB') || "0s",
+    "maidenB": localStorage.getItem('maidenBPB') || "0s",
+    "unicornA": localStorage.getItem('unicornAPB') || "0s",
+    "unicornB": localStorage.getItem('unicornBPB') || "0s"
+}
 
 const symbols = {
     "lionA": {
@@ -38,19 +43,6 @@ const symbols = {
 }
 
 let randomizeStart = () => Math.floor(Math.random() * 5);
-
-const areArraysEqual = (arrA, arrB) => {
-    const isLengthEqual = arrA.length === arrB.length
-    if (!isLengthEqual) {return false;}
-
-    let isEqual = true;
-    for (let i = 0; i < arrA.length; i++) {
-       if (arrA[i] !== arrB[i]) {
-          return false;
-       }
-    }
-    return isEqual;
-}
 
 let symbolA = randomizeStart(); // randomised 0-4
 let symbolB = randomizeStart(); // randomised 0-4
