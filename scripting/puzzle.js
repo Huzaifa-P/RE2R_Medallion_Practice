@@ -126,9 +126,9 @@ function resetPuzzle() {
 
 function completePuzzle() {
     if (areArraysEqual([symbolA, symbolB, symbolC], solution)) {
-        document.getElementById("solution").innerHTML = "CORRECT! Press R to reset"
-        localStorage.setItem(pbNames[currentPuzzle], document.getElementById("timer").innerHTML);
-        document.getElementById("pb").innerHTML = "PB in session: " + checkBestTime(document.getElementById("timer").innerHTML, personalBest)
+        document.getElementById("solution").innerHTML = "CORRECT! Press R to reset";
+        document.getElementById("pb").innerHTML = "PB in session: " + checkBestTime(document.getElementById("timer").innerHTML, personalBest);
+        localStorage.setItem(pbNames[currentPuzzle], checkBestTime(document.getElementById("timer").innerHTML, personalBest));
         document.getElementById("solution").style = "color: green;"
         stopTimer();
     }

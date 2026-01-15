@@ -2,8 +2,6 @@ let startTime = performance.now();
 let intervalId;
 let running = true;
 
-let personalBest = "0s";
-
 function startTimer() {
     startTime = performance.now();
     running = true;
