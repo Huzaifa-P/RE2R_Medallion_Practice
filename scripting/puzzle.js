@@ -39,6 +39,8 @@ switch (currentPuzzle) {
         break;
 }
 
+document.getElementById("puzzle-solution").innerHTML = puzzleSolutionDisplay[currentPuzzle].join(" - ");
+
 function changeSymbol(direction) {
     let currentImage;
     let currentArray;

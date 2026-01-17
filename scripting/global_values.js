@@ -60,6 +60,14 @@ const symbols = {
     }
 }
 
+let puzzleSolutionDisplay = {
+    "lionA": ["Lion", "Leaf", "Bird"],
+    "lionB": ["Crown", "Fire", "Bird"],
+    "maidenA": ["Woman", "Bow", "Snake"],
+    "maidenB": ["Ram", "Harp", "Bird"],
+    "unicornA": ["Fish", "Scorpion", "Pot"],
+    "unicornB": ["Twin", "Scale", "Worm"]
+}
 let randomizeStart = () => Math.floor(Math.random() * 5);
 
 let symbolA = randomizeStart(); // randomised 0-4
