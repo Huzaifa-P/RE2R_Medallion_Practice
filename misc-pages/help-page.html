@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Page</title>
+</head>
+<body>
+    <h1 id="help-page-title">Help Page</h1>
+
+    <h2 id="about-title">About This Tool</h2>
+    <p id="about-description">
+        This tool is designed to help users practice solving the RE2R medallion puzzles in Resident Evil 2 Remake.
+        
+        It provides an interactive interface to simulate the puzzle-solving experience, with a timer, so you can practice and improve to save time during your runs.
+
+        I have also tried to simulate the input lag between each keypress to better reflect the delay experienced in-game.
+
+        I plan to add sounds and more visual effects in the future to enhance the experience, with the main goal being to maintain performance and responsiveness.
+
+        As I am a beginner runner, I am yet to add the B scenario medallion puzzles, but they will be added as soon as I learn them myself.
+    </p>
+
+    <h2 id="controls-title">Controls</h2>
+    <ul id="controls-list">
+        <li>Use W, S or the Up and Down arrow keys to change symbols.</li>
+        <li>Use A, D or the Left and Right arrow keys to change positions of the symbols.</li>
+        <li>Press Space, E, F, Q or Enter keys to submit.</li>
+        <li>Press the R key to reset the puzzle and timer.</li>
+    </ul>
+
+    <h2 id="known-bugs-improvements-title">Known Bugs / Improvements to be added</h2>
+    <ul id="bugs-list">
+        <li>Images don't load properly when first opening the tool / when changing symbols for the first time, so it may look buggy during initial solves
+            <ul>
+                <li>For now, you'll need to scroll through each symbol, on each section, then the images will load properly when changing symbols.</li>
+                <li>I'm working on fixing this as I improve my web-development skills.</li>
+            </ul>
+        </li>
+        <li>Currently no sound when changing symbols or positions.
+            <ul>
+                <li>Once I am able to clearly record the symbol changing sounds (without background noise), this will be added to the tool</li>
+            </ul>
+        </li>
+        <li>Aim to add animations when changing symbols to better simulate the in-game experience.
+            <ul>
+                <li>This will be added as I improve my web-development skills.</li>
+            </ul>
+        </li>
+    </ul>
+    <button id="help-back-button" onclick="location.href='../index.html'">Main Page</button>
+</body>
+</html>

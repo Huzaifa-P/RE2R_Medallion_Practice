@@ -18,6 +18,8 @@ document.getElementById("pb").innerHTML = "PB in session: " + pbValues[currentPu
 let lastWasdTime = 0;
 const WASD_COOLDOWN = 160; // milliseconds
 
+let symbolChangeAudio = new Audio('audio_file.mp3');
+
 switch (currentPuzzle) {
     case "lionA":
         document.getElementById("puzzle-page-title").innerHTML = "Lion Medallion A";
